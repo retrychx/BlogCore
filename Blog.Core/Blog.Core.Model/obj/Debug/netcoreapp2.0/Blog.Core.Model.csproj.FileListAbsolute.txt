@@ -1,0 +1,9 @@
+/Users/admin/Desktop/Blog/Blog.Core/Blog.Core.Model/bin/Debug/netcoreapp2.0/Blog.Core.Model.deps.json
+/Users/admin/Desktop/Blog/Blog.Core/Blog.Core.Model/bin/Debug/netcoreapp2.0/Blog.Core.Model.dll
+/Users/admin/Desktop/Blog/Blog.Core/Blog.Core.Model/bin/Debug/netcoreapp2.0/Blog.Core.Model.pdb
+/Users/admin/Desktop/Blog/Blog.Core/Blog.Core.Model/obj/Debug/netcoreapp2.0/Blog.Core.Model.csproj.CoreCompileInputs.cache
+/Users/admin/Desktop/Blog/Blog.Core/Blog.Core.Model/obj/Debug/netcoreapp2.0/Blog.Core.Model.AssemblyInfoInputs.cache
+/Users/admin/Desktop/Blog/Blog.Core/Blog.Core.Model/obj/Debug/netcoreapp2.0/Blog.Core.Model.AssemblyInfo.cs
+/Users/admin/Desktop/Blog/Blog.Core/Blog.Core.Model/obj/Debug/netcoreapp2.0/Blog.Core.Model.dll
+/Users/admin/Desktop/Blog/Blog.Core/Blog.Core.Model/obj/Debug/netcoreapp2.0/Blog.Core.Model.pdb
+/Users/admin/Desktop/Blog/Blog.Core/Blog.Core.Model/bin/Debug/netcoreapp2.0/Blog.Core.Model.xml

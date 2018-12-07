@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Blog.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Blog.Core.AuthHelper.OverWrite.JwtHelper">
+            <summary>
+            Jwt helper.
+            </summary>
+        </member>
+        <member name="M:Blog.Core.AuthHelper.OverWrite.JwtHelper.IssueJWT(Blog.Core.AuthHelper.OverWrite.TokenModelJWT)">
+            <summary>
+            颁发JWT字符串
+            </summary>
+            <returns>The jwt.</returns>
+            <param name="tokenModel">Token model.</param>
+        </member>
+        <member name="T:Blog.Core.AuthHelper.OverWrite.JwtTokenAuth">
+            <summary>
+            Jwt token auth.
+            </summary>
+        </member>
+        <member name="F:Blog.Core.AuthHelper.OverWrite.JwtTokenAuth.next">
+            <summary>
+            The next.
+            </summary>
+        </member>
+        <member name="M:Blog.Core.AuthHelper.OverWrite.JwtTokenAuth.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Blog.Core.AuthHelper.OverWrite.JwtTokenAuth"/> class.
+            </summary>
+        </member>
+        <member name="T:Blog.Core.AuthHelper.OverWrite.TokenModelJWT">
+            <summary>
+            Token model jwt.
+            </summary>
+        </member>
+        <member name="P:Blog.Core.AuthHelper.OverWrite.TokenModelJWT.Uid">
+            <summary>
+            Id
+            </summary>
+            <value>The uid.</value>
+        </member>
+        <member name="P:Blog.Core.AuthHelper.OverWrite.TokenModelJWT.Role">
+            <summary>
+            角色
+            </summary>
+            <value>The role.</value>
+        </member>
+        <member name="P:Blog.Core.AuthHelper.OverWrite.TokenModelJWT.Work">
+            <summary>
+            职能
+            </summary>
+            <value>The work.</value>
+        </member>
+        <member name="T:Blog.Core.Controllers.LoginController">
+            <summary>
+            Login controller.
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Controllers.LoginController.GetJwtStr(System.Int64,System.String)">
+            <summary>
+            Gets the jwt string.
+            </summary>
+            <returns>The jwt string.</returns>
+            <param name="id">Identifier.</param>
+            <param name="sub">Sub.</param>
+        </member>
+        <member name="T:Blog.Core.Controllers.ValuesController">
+            <summary>
+            控制器文字说明
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Controllers.ValuesController.Get(Blog.Core.Model.Love)">
+            <summary>
+            获取数据列表
+            </summary>
+            <returns>The get.</returns>
+        </member>
+        <member name="M:Blog.Core.Controllers.ValuesController.Get(System.Int32)">
+            <summary>
+            获取一个Id的数据
+            </summary>
+            <returns>The get.</returns>
+            <param name="id">Identifier.</param>
+        </member>
+        <member name="M:Blog.Core.Controllers.ValuesController.Post(System.String)">
+            <summary>
+            向服务器post数据
+            </summary>
+            <param name="value">Value.</param>
+        </member>
+        <member name="M:Blog.Core.Controllers.ValuesController.Put(System.Int32,System.String)">
+            <summary>
+            向服务器put数据
+            </summary>
+            <param name="id">Identifier.</param>
+            <param name="value">Value.</param>
+        </member>
+        <member name="M:Blog.Core.Controllers.ValuesController.Delete(System.Int32)">
+            <summary>
+            向服务器delete数据
+            </summary>
+            <param name="id">Identifier.</param>
+        </member>
+        <member name="T:Blog.Core.Program">
+            <summary>
+            Program.
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Program.Main(System.String[])">
+            <summary>
+            The entry point of the program, where the program control starts and ends.
+            </summary>
+            <param name="args">The command-line arguments.</param>
+        </member>
+        <member name="M:Blog.Core.Program.BuildWebHost(System.String[])">
+            <summary>
+            Builds the web host.
+            </summary>
+            <returns>The web host.</returns>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Blog.Core.Startup">
+            <summary>
+            Startup.
+            </summary>
+        </member>
+        <member name="M:Blog.Core.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Blog.Core.Startup"/> class.
+            </summary>
+            <param name="configuration">Configuration.</param>
+        </member>
+        <member name="P:Blog.Core.Startup.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>The configuration.</value>
+        </member>
+        <member name="M:Blog.Core.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the services.
+            </summary>
+            <param name="services">Services.</param>
+        </member>
+        <member name="M:Blog.Core.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            Configure the specified app and env.
+            </summary>
+            <param name="app">App.</param>
+            <param name="env">Env.</param>
+        </member>
+    </members>
+</doc>

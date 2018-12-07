@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{448D20D9-0621-4466-A97E-C4DFDB376464}|Default">
+  <MonoDevelop.Ide.ItemProperties.Blog.Core PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Core/Controllers/LoginController.cs">
+    <Files>
+      <File FileName="Blog.Core/Controllers/ValuesController.cs" Line="7" Column="1" />
+      <File FileName="Blog.Core/Startup.cs" Line="124" Column="20" />
+      <File FileName="Blog.Core/Program.cs" Line="24" Column="1" />
+      <File FileName="Blog.Core/Properties/launchSettings.json" Line="22" Column="30" />
+      <File FileName="Blog.Core.Model/Love.cs" Line="23" Column="15" />
+      <File FileName="Blog.Core/AuthHelper/OverWrite/JwtHelper.cs" Line="70" Column="1" />
+      <File FileName="Blog.Core/AuthHelper/OverWrite/TokenModelJWT.cs" Line="20" Column="1" />
+      <File FileName="Blog.Core/AuthHelper/OverWrite/JwtTokenAuth.cs" Line="46" Column="38" />
+      <File FileName="Blog.Core/Controllers/LoginController.cs" Line="18" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
