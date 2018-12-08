@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/admin/Desktop/Blog/Blog.Core/Blog.Core.Model/Blog.Core.Model.csproj",
+      "projectUniqueName": "/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Model/Blog.Core.Model.csproj",
       "projectName": "Blog.Core.Model",
-      "projectPath": "/Users/admin/Desktop/Blog/Blog.Core/Blog.Core.Model/Blog.Core.Model.csproj",
+      "projectPath": "/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Model/Blog.Core.Model.csproj",
       "packagesPath": "/Users/admin/.nuget/packages/",
-      "outputPath": "/Users/admin/Desktop/Blog/Blog.Core/Blog.Core.Model/obj",
+      "outputPath": "/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Model/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

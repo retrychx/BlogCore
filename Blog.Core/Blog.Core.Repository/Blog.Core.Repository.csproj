@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Blog.Core.IRepository\Blog.Core.IRepository.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="sqlSugarCore" Version="4.6.4.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sugar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="sugar\BaseDBConfig.json" />
+  </ItemGroup>
+</Project>

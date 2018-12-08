@@ -19,7 +19,7 @@ namespace Blog.Core.Controllers
         [Route("Token2")]
         public JsonResult GetJwtStr(long id = 1, string sub = "Admin")
         {
-            var tm = new TokenModelJWT
+            TokenModelJWT tm = new TokenModelJWT
             {
                 Uid = id,
                 Role = sub
@@ -27,7 +27,8 @@ namespace Blog.Core.Controllers
 
             var jwtStr = JwtHelper.IssueJWT(tm);
 
-            return Json(jwtStr);
+            var result = Json(jwtStr);
+            return result;
         }
     }
 }

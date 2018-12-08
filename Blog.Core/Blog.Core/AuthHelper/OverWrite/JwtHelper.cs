@@ -11,6 +11,10 @@ namespace Blog.Core.AuthHelper.OverWrite
     /// </summary>
     public class JwtHelper
     {
+        /// <summary>
+        /// Gets or sets the secret key.
+        /// </summary>
+        /// <value>The secret key.</value>
         public static string SecretKey { get; set; } = "sdfsdfsrty45634kkhllghtdgdfss345t678fs";
 
         /// <summary>
@@ -27,6 +31,17 @@ namespace Blog.Core.AuthHelper.OverWrite
                 new Claim("Role",tokenModel.Role),
                 new Claim(JwtRegisteredClaimNames.Iat,dateTime.ToString(),ClaimValueTypes.Integer64)
             };
+
+            //var claims = new Claim[]
+            //{
+            //    new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()),
+            //    new Claim(JwtRegisteredClaimNames.Iat,$"{new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds()}"),
+            //    new Claim(JwtRegisteredClaimNames.Nbf,$"{new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds()}"),
+            //    new Claim(JwtRegisteredClaimNames.Exp,$"{new DateTimeOffset(DateTime.Now.AddSeconds(100)).ToUnixTimeSeconds()}"),
+            //    new Claim(JwtRegisteredClaimNames.Iss,"Blog.Core"),
+            //    new Claim(JwtRegisteredClaimNames.Aud,"wr"),
+            //    new Claim(ClaimTypes.Role,tokenModel.Role)
+            //}
 
             //密钥
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtHelper.SecretKey));
@@ -45,6 +60,11 @@ namespace Blog.Core.AuthHelper.OverWrite
             return encodeJwt;
         }
 
+        /// <summary>
+        /// Serializes the jwt.
+        /// </summary>
+        /// <returns>The jwt.</returns>
+        /// <param name="jwtStr">Jwt string.</param>
         public static TokenModelJWT SerializeJWT(string jwtStr)
         {
             var jwtHandler = new JwtSecurityTokenHandler();

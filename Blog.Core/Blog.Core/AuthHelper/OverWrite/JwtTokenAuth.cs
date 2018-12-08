@@ -24,6 +24,11 @@ namespace Blog.Core.AuthHelper.OverWrite
             this.next = next;
         }
 
+        /// <summary>
+        /// Invoke the specified httpContext.
+        /// </summary>
+        /// <returns>The invoke.</returns>
+        /// <param name="httpContext">Http context.</param>
         public Task Invoke(HttpContext httpContext)
         {
             if(!httpContext.Request.Headers.ContainsKey("Authorization"))

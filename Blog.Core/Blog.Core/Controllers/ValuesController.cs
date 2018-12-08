@@ -21,7 +21,7 @@ namespace Blog.Core.Controllers
         /// <returns>The get.</returns>
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get(Love love)
+        public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }

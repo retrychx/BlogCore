@@ -9,12 +9,25 @@
             Jwt helper.
             </summary>
         </member>
+        <member name="P:Blog.Core.AuthHelper.OverWrite.JwtHelper.SecretKey">
+            <summary>
+            Gets or sets the secret key.
+            </summary>
+            <value>The secret key.</value>
+        </member>
         <member name="M:Blog.Core.AuthHelper.OverWrite.JwtHelper.IssueJWT(Blog.Core.AuthHelper.OverWrite.TokenModelJWT)">
             <summary>
             颁发JWT字符串
             </summary>
             <returns>The jwt.</returns>
             <param name="tokenModel">Token model.</param>
+        </member>
+        <member name="M:Blog.Core.AuthHelper.OverWrite.JwtHelper.SerializeJWT(System.String)">
+            <summary>
+            Serializes the jwt.
+            </summary>
+            <returns>The jwt.</returns>
+            <param name="jwtStr">Jwt string.</param>
         </member>
         <member name="T:Blog.Core.AuthHelper.OverWrite.JwtTokenAuth">
             <summary>
@@ -30,6 +43,13 @@
             <summary>
             Initializes a new instance of the <see cref="T:Blog.Core.AuthHelper.OverWrite.JwtTokenAuth"/> class.
             </summary>
+        </member>
+        <member name="M:Blog.Core.AuthHelper.OverWrite.JwtTokenAuth.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Invoke the specified httpContext.
+            </summary>
+            <returns>The invoke.</returns>
+            <param name="httpContext">Http context.</param>
         </member>
         <member name="T:Blog.Core.AuthHelper.OverWrite.TokenModelJWT">
             <summary>
@@ -54,6 +74,14 @@
             </summary>
             <value>The work.</value>
         </member>
+        <member name="M:Blog.Core.Controllers.BlogController.Get(System.Int32,System.Int32)">
+            <summary>
+            Sum接口
+            </summary>
+            <returns>The get.</returns>
+            <param name="i">The index.</param>
+            <param name="j">J.</param>
+        </member>
         <member name="T:Blog.Core.Controllers.LoginController">
             <summary>
             Login controller.
@@ -72,7 +100,7 @@
             控制器文字说明
             </summary>
         </member>
-        <member name="M:Blog.Core.Controllers.ValuesController.Get(Blog.Core.Model.Love)">
+        <member name="M:Blog.Core.Controllers.ValuesController.Get">
             <summary>
             获取数据列表
             </summary>
