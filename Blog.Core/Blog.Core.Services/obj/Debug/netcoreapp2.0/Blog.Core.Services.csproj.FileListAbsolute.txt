@@ -14,3 +14,6 @@
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Services/obj/Debug/netcoreapp2.0/Blog.Core.Services.csproj.CopyComplete
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Services/obj/Debug/netcoreapp2.0/Blog.Core.Services.dll
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Services/obj/Debug/netcoreapp2.0/Blog.Core.Services.pdb
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Services/bin/Debug/netcoreapp2.0/Blog.Core.Model.dll
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Services/bin/Debug/netcoreapp2.0/Blog.Core.Model.pdb
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Services/bin/Debug/netcoreapp2.0/Blog.Core.Model.xml

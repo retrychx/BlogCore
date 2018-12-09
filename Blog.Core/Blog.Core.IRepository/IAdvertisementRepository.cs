@@ -1,5 +1,7 @@
 ﻿using System;
-using Blog.Core.Model;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using Blog.Core.Model.Models;
 
 namespace Blog.Core.IRepository
 {
@@ -7,6 +9,12 @@ namespace Blog.Core.IRepository
     {
         int Sum(int i, int j);
 
-        int Add()
+        int Add(Advertisement model);
+
+        bool Delete(Advertisement model);
+
+        bool Update(Advertisement model);
+
+        List<Advertisement> Query(Expression<Func<Advertisement, bool>> whereExpression);
     }
 }

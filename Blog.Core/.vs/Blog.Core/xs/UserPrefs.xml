@@ -1,14 +1,8 @@
 ﻿<Properties StartupConfiguration="{448D20D9-0621-4466-A97E-C4DFDB376464}|Default">
   <MonoDevelop.Ide.ItemProperties.Blog.Core PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Core.Repository/sugar/DbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Core.Repository/AdvertisementRepository.cs">
     <Files>
-      <File FileName="Blog.Core.Services/AdvertisementServices.cs" Line="14" Column="34" />
-      <File FileName="Blog.Core/Controllers/BlogController.cs" Line="17" Column="35" />
-      <File FileName="Blog.Core.IRepository/IAdvertisementRepository.cs" Line="20" Column="2" />
-      <File FileName="Blog.Core.Repository/AdvertisementRepository.cs" Line="10" Column="6" />
-      <File FileName="Blog.Core.Repository/sugar/BaseDBConfig.json" Line="1" Column="1" />
-      <File FileName="Blog.Core.Repository/sugar/BaseDBConfig.cs" Line="1" Column="1" />
-      <File FileName="Blog.Core.Repository/sugar/DbContext.cs" Line="1" Column="1" />
+      <File FileName="Blog.Core.Repository/AdvertisementRepository.cs" Line="19" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
