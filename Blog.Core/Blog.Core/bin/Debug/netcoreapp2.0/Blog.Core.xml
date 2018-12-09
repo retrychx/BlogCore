@@ -74,6 +74,11 @@
             </summary>
             <value>The work.</value>
         </member>
+        <member name="T:Blog.Core.Controllers.BlogController">
+            <summary>
+            Blog controller.
+            </summary>
+        </member>
         <member name="M:Blog.Core.Controllers.BlogController.Get(System.Int32,System.Int32)">
             <summary>
             Sum接口
@@ -81,6 +86,32 @@
             <returns>The get.</returns>
             <param name="i">The index.</param>
             <param name="j">J.</param>
+        </member>
+        <member name="M:Blog.Core.Controllers.BlogController.Get(System.Int32)">
+            <summary>
+            Get the specified id.
+            </summary>
+            <returns>The get.</returns>
+            <param name="id">Identifier.</param>
+        </member>
+        <member name="M:Blog.Core.Controllers.BlogController.Post(System.String)">
+            <summary>
+            Post the specified value.
+            </summary>
+            <param name="value">Value.</param>
+        </member>
+        <member name="M:Blog.Core.Controllers.BlogController.Put(System.Int32,System.String)">
+            <summary>
+            Put the specified id and value.
+            </summary>
+            <param name="id">Identifier.</param>
+            <param name="value">Value.</param>
+        </member>
+        <member name="M:Blog.Core.Controllers.BlogController.Delete(System.Int32)">
+            <summary>
+            Delete the specified id.
+            </summary>
+            <param name="id">Identifier.</param>
         </member>
         <member name="T:Blog.Core.Controllers.LoginController">
             <summary>

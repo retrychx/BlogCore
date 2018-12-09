@@ -7,3 +7,7 @@
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.IServices/obj/Debug/netcoreapp2.0/Blog.Core.IServices.AssemblyInfo.cs
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.IServices/obj/Debug/netcoreapp2.0/Blog.Core.IServices.dll
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.IServices/obj/Debug/netcoreapp2.0/Blog.Core.IServices.pdb
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.IServices/bin/Debug/netcoreapp2.0/Blog.Core.Model.dll
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.IServices/bin/Debug/netcoreapp2.0/Blog.Core.Model.pdb
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.IServices/bin/Debug/netcoreapp2.0/Blog.Core.Model.xml
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.IServices/obj/Debug/netcoreapp2.0/Blog.Core.IServices.csproj.CopyComplete
