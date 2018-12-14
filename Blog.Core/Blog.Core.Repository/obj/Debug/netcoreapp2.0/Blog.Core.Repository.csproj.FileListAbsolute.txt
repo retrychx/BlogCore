@@ -13,3 +13,6 @@
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Repository/bin/Debug/netcoreapp2.0/Blog.Core.Model.dll
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Repository/bin/Debug/netcoreapp2.0/Blog.Core.Model.pdb
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Repository/bin/Debug/netcoreapp2.0/Blog.Core.Model.xml
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.Repository.deps.json
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.Repository.dll
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.Repository.pdb

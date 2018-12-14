@@ -16,6 +16,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="4.5.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +27,5 @@
   <ItemGroup>
     <ProjectReference Include="..\Blog.Core.Model\Blog.Core.Model.csproj" />
     <ProjectReference Include="..\Blog.Core.IServices\Blog.Core.IServices.csproj" />
-    <ProjectReference Include="..\Blog.Core.Services\Blog.Core.Services.csproj" />
   </ItemGroup>
 </Project>

@@ -36,7 +36,7 @@ namespace Blog.Core.Model.Models
         /// Ip地址
         /// </summary>
         /// <value>The ip address.</value>
-        public string IpAddress { get; set; }
+        public string IPAddress { get; set; }
 
         /// <summary>
         /// 描述

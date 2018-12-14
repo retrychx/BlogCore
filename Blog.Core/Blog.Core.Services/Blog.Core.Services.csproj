@@ -4,6 +4,12 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\Blog.Core\bin\Debug</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\Blog.Core\bin\Debug</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />
   </ItemGroup>
@@ -11,5 +17,8 @@
     <ProjectReference Include="..\Blog.Core.IServices\Blog.Core.IServices.csproj" />
     <ProjectReference Include="..\Blog.Core.IRepository\Blog.Core.IRepository.csproj" />
     <ProjectReference Include="..\Blog.Core.Repository\Blog.Core.Repository.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Base\" />
   </ItemGroup>
 </Project>

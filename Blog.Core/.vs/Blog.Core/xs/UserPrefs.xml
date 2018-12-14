@@ -1,19 +1,31 @@
 ﻿<Properties StartupConfiguration="{448D20D9-0621-4466-A97E-C4DFDB376464}|Default">
   <MonoDevelop.Ide.ItemProperties.Blog.Core PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Core/Controllers/BlogController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Core/Program.cs">
     <Files>
-      <File FileName="Blog.Core.Repository/AdvertisementRepository.cs" Line="65" Column="26" />
-      <File FileName="Blog.Core.IServices/IAdvertisementServices.cs" Line="18" Column="90" />
-      <File FileName="Blog.Core.Services/AdvertisementServices.cs" Line="37" Column="38" />
-      <File FileName="Blog.Core/Controllers/BlogController.cs" Line="1" Column="1" />
+      <File FileName="Blog.Core/Startup.cs" Line="112" Column="1" />
+      <File FileName="Blog.Core/Controllers/BlogController.cs" Line="7" Column="27" />
+      <File FileName="Blog.Core.Services/AdvertisementServices.cs" Line="13" Column="6" />
+      <File FileName="Blog.Core.Services/Base/BaseServices.cs" Line="236" Column="2" />
+      <File FileName="Blog.Core/Program.cs" Line="33" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Blog.Core" expanded="True">
+            <Node name="Blog.Core" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Blog.Core.Repository" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <RunToCursorBreakpoint file="/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Repository/AdvertisementRepository.cs" relfile="Blog.Core.Repository/AdvertisementRepository.cs" line="20" column="32" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

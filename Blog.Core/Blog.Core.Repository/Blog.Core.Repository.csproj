@@ -4,6 +4,12 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\Blog.Core\bin\Debug</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\Blog.Core\bin\Debug</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />
   </ItemGroup>
@@ -15,6 +21,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="sugar\" />
+    <Folder Include="Base\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="sugar\BaseDBConfig.json" />

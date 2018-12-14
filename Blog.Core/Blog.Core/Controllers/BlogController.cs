@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Blog.Core.IServices;
-using Blog.Core.Services;
 using Blog.Core.Model.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -20,6 +19,17 @@ namespace Blog.Core.Controllers
     //[Authorize(Policy = "Admin")]
     public class BlogController : Controller
     {
+        IAdvertisementServices advertisementServices;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:Blog.Core.Controllers.BlogController"/> class.
+        /// </summary>
+        /// <param name="advertisementServices">Advertisement services.</param>
+        public BlogController(IAdvertisementServices advertisementServices)
+        {
+            this.advertisementServices = advertisementServices;
+        }
+
         // GET: api/Blog
         /// <summary>
         /// Sum接口
@@ -30,8 +40,7 @@ namespace Blog.Core.Controllers
         [HttpGet]
         public int Get(int i,int j)
         {
-            IAdvertisementServices advertisementServices = new AdvertisementServices();
-            return advertisementServices.Sum(i, j);
+            return i + j;
         }
 
         /// <summary>
@@ -41,11 +50,9 @@ namespace Blog.Core.Controllers
         /// <param name="id">Identifier.</param>
         // GET api/Blog/5
         [HttpGet("{id}",Name = "Get")]
-        public List<Advertisement> Get(int id)
+        public async Task<List<Advertisement>> Get(int id)
         {
-            IAdvertisementServices advertisementServices = new AdvertisementServices();
-
-            return advertisementServices.Query(d => d.Id == id);
+            return await advertisementServices.Query(d => d.Id == id);
         }
 
         /// <summary>

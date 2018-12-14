@@ -79,6 +79,12 @@
             Blog controller.
             </summary>
         </member>
+        <member name="M:Blog.Core.Controllers.BlogController.#ctor(Blog.Core.IServices.IAdvertisementServices)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Blog.Core.Controllers.BlogController"/> class.
+            </summary>
+            <param name="advertisementServices">Advertisement services.</param>
+        </member>
         <member name="M:Blog.Core.Controllers.BlogController.Get(System.Int32,System.Int32)">
             <summary>
             Sum接口

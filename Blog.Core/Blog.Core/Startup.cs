@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Autofac;
 using Blog.Core.AuthHelper.OverWrite;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -13,6 +14,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
+using Blog.Core.IServices;
+using Autofac.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace Blog.Core
 {
@@ -41,7 +45,7 @@ namespace Blog.Core
         /// </summary>
         /// <param name="services">Services.</param>
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
 
@@ -98,6 +102,32 @@ namespace Blog.Core
                 options.AddPolicy("AdminOrClient", policy => policy.RequireRole("Admin,Client").Build());
             });
             #endregion
+
+            #region AutoFac
+            //实例化 AutoFac 容器
+            var builder = new ContainerBuilder();
+
+            //注册要通过反射创建的组件
+            //builder.RegisterType<AdvertisementServices>().As<IAdvertisementServices>();
+            var path = PlatformServices.Default.Application.ApplicationBasePath;
+
+            var servicesPath = Path.Combine(path, "Blog.Core.Services.dll");
+            var assemblysServices = Assembly.LoadFile(servicesPath);
+            builder.RegisterAssemblyTypes(assemblysServices).AsImplementedInterfaces();
+
+            var repositoryPath = Path.Combine(path, "Blog.Core.Repository.dll");
+            var assemblysRepository = Assembly.LoadFile(repositoryPath);
+            builder.RegisterAssemblyTypes(assemblysRepository).AsImplementedInterfaces();
+
+            //将services填充AutoFac容器生成器
+            builder.Populate(services);
+
+            //使用已进行的组件登记创建新容器
+            var ApplicationContainer = builder.Build();
+            #endregion
+
+            //第三方IOC接管
+            return new AutofacServiceProvider(ApplicationContainer);
         }
 
         /// <summary>

@@ -284,7 +284,7 @@ namespace Blog.Core.Repository.sugar
             return new DbContext(isAutoCloseConnection);
         }
 
-        public static void Init(string strConnectionString ,DbType enmDbType = SqlSugar.DbType.SqlServer)
+        public static void Init(string strConnectionString ,DbType enmDbType = SqlSugar.DbType.MySql)
         {
             connectionString = strConnectionString;
             dbType = enmDbType;

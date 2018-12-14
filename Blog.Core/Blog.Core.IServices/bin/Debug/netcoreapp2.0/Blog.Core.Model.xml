@@ -417,7 +417,7 @@
             </summary>
             <value>The action.</value>
         </member>
-        <member name="P:Blog.Core.Model.Models.OperateLog.IpAddress">
+        <member name="P:Blog.Core.Model.Models.OperateLog.IPAddress">
             <summary>
             Ip地址
             </summary>
