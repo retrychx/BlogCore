@@ -11,6 +11,7 @@
     <Folder Include="wwwroot\" />
     <Folder Include="AuthHelper\" />
     <Folder Include="AuthHelper\OverWrite\" />
+    <Folder Include="AOP\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,5 +28,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Blog.Core.Model\Blog.Core.Model.csproj" />
     <ProjectReference Include="..\Blog.Core.IServices\Blog.Core.IServices.csproj" />
+    <ProjectReference Include="..\Blog.Core.Services\Blog.Core.Services.csproj" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,5 @@
 ﻿using System;
 using Blog.Core.IRepository;
-using Blog.Core.Repository;
 using Blog.Core.IServices;
 using Blog.Core.Model.Models;
 using System.Collections.Generic;
@@ -11,7 +10,13 @@ namespace Blog.Core.Services
 {
     public class AdvertisementServices : BaseServices<Advertisement>,IAdvertisementServices
     {
-        //IAdvertisementRepository dal = new AdvertisementRepository();
+        IAdvertisementRepository dal;
+
+        public AdvertisementServices(IAdvertisementRepository dal)
+        {
+            this.dal = dal;
+            base.baseDal = dal;
+        }
 
         //public int Add(Advertisement model)
         //{

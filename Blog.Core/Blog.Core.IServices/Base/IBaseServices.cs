@@ -9,7 +9,7 @@ namespace Blog.Core.IServices.Base
     {
 
         Task<TEntity> QueryByID(object objId);
-        Task<TEntity> QueryByID(object objId, bool blnUseCache = false);
+        Task<TEntity> QueryByID(object objId, bool blnUseCache);
         Task<List<TEntity>> QueryByIDs(object[] lstIds);
 
         Task<int> Add(TEntity model);

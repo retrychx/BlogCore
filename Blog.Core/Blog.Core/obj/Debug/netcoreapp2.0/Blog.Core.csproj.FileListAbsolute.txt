@@ -20,9 +20,9 @@
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.runtimeconfig.dev.json
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.dll
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.pdb
-/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.Model.dll
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.Model.pdb
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.Model.xml
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.IServices.pdb
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/obj/Debug/netcoreapp2.0/Blog.Core.csprojAssemblyReference.cache
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/obj/Debug/netcoreapp2.0/Blog.Core.csproj.CoreCompileInputs.cache
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/obj/Debug/netcoreapp2.0/Blog.Core.AssemblyInfoInputs.cache
@@ -30,5 +30,6 @@
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/obj/Debug/netcoreapp2.0/Blog.Core.csproj.CopyComplete
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/obj/Debug/netcoreapp2.0/Blog.Core.dll
 /Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/obj/Debug/netcoreapp2.0/Blog.Core.pdb
-/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.IServices.dll
-/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.IServices.pdb
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.Services.pdb
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.IRepository.pdb
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.Repository.pdb

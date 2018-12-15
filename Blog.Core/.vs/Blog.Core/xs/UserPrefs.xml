@@ -1,25 +1,55 @@
 ﻿<Properties StartupConfiguration="{448D20D9-0621-4466-A97E-C4DFDB376464}|Default">
   <MonoDevelop.Ide.ItemProperties.Blog.Core PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Core/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Core/Controllers/BlogController.cs">
     <Files>
-      <File FileName="Blog.Core/Startup.cs" Line="119" Column="77" />
-      <File FileName="Blog.Core/Controllers/BlogController.cs" Line="7" Column="27" />
-      <File FileName="Blog.Core.Services/AdvertisementServices.cs" Line="13" Column="6" />
-      <File FileName="Blog.Core.Services/Base/BaseServices.cs" Line="236" Column="2" />
-      <File FileName="Blog.Core/Program.cs" Line="34" Column="22" />
+      <File FileName="Blog.Core/Startup.cs" Line="141" Column="9" />
+      <File FileName="Blog.Core/Controllers/BlogController.cs" Line="33" Column="1" />
+      <File FileName="Blog.Core.Services/AdvertisementServices.cs" Line="2" Column="29" />
+      <File FileName="Blog.Core.Services/Base/BaseServices.cs" Line="6" Column="32" />
+      <File FileName="Blog.Core/Program.cs" Line="24" Column="1" />
+      <File FileName="Blog.Core/appsettings.json" Line="14" Column="4" />
+      <File FileName="Blog.Core.Repository/Base/BaseRepository.cs" Line="36" Column="10" />
+      <File FileName="Blog.Core.Repository/sugar/BaseDBConfig.cs" Line="9" Column="1" />
+      <File FileName="Blog.Core.Repository/sugar/DbContext.cs" Line="1" Column="1" />
+      <File FileName="Blog.Core.Repository/AdvertisementRepository.cs" Line="1" Column="1" />
       <File FileName="Blog.Core/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="Blog.Core.Repository/BlogArticleRepository.cs" Line="13" Column="1" />
+      <File FileName="Blog.Core.IRepository/IBlogArticleRepository.cs" Line="11" Column="1" />
+      <File FileName="Blog.Core.IServices/IBlogArticleServices.cs" Line="5" Column="34" />
+      <File FileName="Blog.Core.Services/BlogArticleServices.cs" Line="25" Column="29" />
+      <File FileName="Blog.Core.IRepository/IAdvertisementRepository.cs" Line="1" Column="1" />
+      <File FileName="Blog.Core.IRepository/Base/IBaseRepository.cs" Line="1" Column="1" />
+      <File FileName="Blog.Core/AOP/BlogLogAOP.cs" Line="45" Column="23" />
+      <File FileName="Blog.Core.IServices/Base/IBaseServices.cs" Line="14" Column="9" />
+      <File FileName="Blog.Core.IServices/IAdvertisementServices.cs" Line="1" Column="1" />
+      <File FileName="Blog.Core/AuthHelper/OverWrite/JwtTokenAuth.cs" Line="33" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Blog.Core" expanded="True">
             <Node name="Blog.Core" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+              <Node name="AOP" expanded="True" />
+              <Node name="AuthHelper" expanded="True">
+                <Node name="OverWrite" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="BlogController.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="Blog.Core.Repository" expanded="True">
-              <Node name="sugar" expanded="True" />
+            <Node name="Blog.Core.IRepository" expanded="True">
+              <Node name="Base" expanded="True" />
+            </Node>
+            <Node name="Blog.Core.IServices" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Base" expanded="True" />
+            </Node>
+            <Node name="Blog.Core.Repository" expanded="True" />
+            <Node name="Blog.Core.Services" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
+              <Node name="Base" expanded="True" />
             </Node>
           </Node>
         </State>

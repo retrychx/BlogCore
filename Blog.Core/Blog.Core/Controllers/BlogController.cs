@@ -20,14 +20,18 @@ namespace Blog.Core.Controllers
     public class BlogController : Controller
     {
         IAdvertisementServices advertisementServices;
+        IBlogArticleServices blogArticleServices;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="T:Blog.Core.Controllers.BlogController"/> class.
         /// </summary>
         /// <param name="advertisementServices">Advertisement services.</param>
-        public BlogController(IAdvertisementServices advertisementServices)
+        /// <param name="blogArticleServices">BlogArticle services.</param>
+        public BlogController(IAdvertisementServices advertisementServices,
+            IBlogArticleServices blogArticleServices)
         {
             this.advertisementServices = advertisementServices;
+            this.blogArticleServices = blogArticleServices;
         }
 
         // GET: api/Blog
@@ -53,6 +57,17 @@ namespace Blog.Core.Controllers
         public async Task<List<Advertisement>> Get(int id)
         {
             return await advertisementServices.Query(d => d.Id == id);
+        }
+
+        /// <summary>
+        /// 获取博客列表
+        /// </summary>
+        /// <returns>The blogs.</returns>
+        [HttpGet]
+        [Route("GetBlogs")]
+        public async Task<List<BlogArticle>> GetBlogs()
+        {
+            return await blogArticleServices.GetBlogs();
         }
 
         /// <summary>

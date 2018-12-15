@@ -17,6 +17,8 @@ using Swashbuckle.AspNetCore.Swagger;
 using Blog.Core.IServices;
 using Autofac.Extensions.DependencyInjection;
 using System.Reflection;
+using Blog.Core.AOP;
+using Autofac.Extras.DynamicProxy;
 
 namespace Blog.Core
 {
@@ -107,13 +109,20 @@ namespace Blog.Core
             //实例化 AutoFac 容器
             var builder = new ContainerBuilder();
 
+            //注册拦截器
+            builder.RegisterType<BlogLogAOP>();
+
             //注册要通过反射创建的组件
             //builder.RegisterType<AdvertisementServices>().As<IAdvertisementServices>();
-            //var path = PlatformServices.Default.Application.ApplicationBasePath;
+            var path = PlatformServices.Default.Application.ApplicationBasePath;
 
             //var servicesPath = Path.Combine(path, "Blog.Core.Services.dll");
             var assemblysServices = Assembly.Load("Blog.Core.Services");
-            builder.RegisterAssemblyTypes(assemblysServices).AsImplementedInterfaces();
+            builder.RegisterAssemblyTypes(assemblysServices)
+                   .AsImplementedInterfaces()
+                   .InstancePerLifetimeScope()
+                   .EnableInterfaceInterceptors()
+                   .InterceptedBy(typeof(BlogLogAOP));
 
             //var repositoryPath = Path.Combine(path, "Blog.Core.Repository.dll");
             var assemblysRepository = Assembly.Load("Blog.Core.Repository");

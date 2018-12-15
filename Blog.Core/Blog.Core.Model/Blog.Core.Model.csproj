@@ -6,6 +6,10 @@
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DocumentationFile>bin\Debug\netcoreapp2.0\Blog.Core.Model.xml</DocumentationFile>
+    <OutputPath>..\Blog.Core\bin\Debug</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\Blog.Core\bin\Debug</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Love.cs" />

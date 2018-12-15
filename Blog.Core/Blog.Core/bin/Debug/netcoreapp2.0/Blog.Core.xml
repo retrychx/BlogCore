@@ -4,6 +4,17 @@
         <name>Blog.Core</name>
     </assembly>
     <members>
+        <member name="T:Blog.Core.AOP.BlogLogAOP">
+            <summary>
+            拦截器BlogLogAOP 继承IInterceptor接口
+            </summary>
+        </member>
+        <member name="M:Blog.Core.AOP.BlogLogAOP.Intercept(Castle.DynamicProxy.IInvocation)">
+            <summary>
+            实例化IInterceptor的唯一方法
+            </summary>
+            <param name="invocation">Invocation.</param>
+        </member>
         <member name="T:Blog.Core.AuthHelper.OverWrite.JwtHelper">
             <summary>
             Jwt helper.
@@ -79,11 +90,12 @@
             Blog controller.
             </summary>
         </member>
-        <member name="M:Blog.Core.Controllers.BlogController.#ctor(Blog.Core.IServices.IAdvertisementServices)">
+        <member name="M:Blog.Core.Controllers.BlogController.#ctor(Blog.Core.IServices.IAdvertisementServices,Blog.Core.IServices.IBlogArticleServices)">
             <summary>
             Initializes a new instance of the <see cref="T:Blog.Core.Controllers.BlogController"/> class.
             </summary>
             <param name="advertisementServices">Advertisement services.</param>
+            <param name="blogArticleServices">BlogArticle services.</param>
         </member>
         <member name="M:Blog.Core.Controllers.BlogController.Get(System.Int32,System.Int32)">
             <summary>
@@ -99,6 +111,12 @@
             </summary>
             <returns>The get.</returns>
             <param name="id">Identifier.</param>
+        </member>
+        <member name="M:Blog.Core.Controllers.BlogController.GetBlogs">
+            <summary>
+            获取博客列表
+            </summary>
+            <returns>The blogs.</returns>
         </member>
         <member name="M:Blog.Core.Controllers.BlogController.Post(System.String)">
             <summary>
