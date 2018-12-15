@@ -28,14 +28,14 @@ namespace Blog.Core.AOP
 
             #region 输出到当前项目日志
 
-            var path = Directory.GetCurrentDirectory() + @"\Log";
+            var path = Path.Combine(Directory.GetCurrentDirectory(),"Log");
 
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
             }
 
-            var fileName = path + $@"\InterceptLog-{DateTime.Now.ToString("yyyyMMddHHmmss")}.log";
+            var fileName = Path.Combine(path, $"InterceptLog-{DateTime.Now.ToString("yyyyMMddHHmmss")}.log");
 
             var sw = File.AppendText(fileName);
 

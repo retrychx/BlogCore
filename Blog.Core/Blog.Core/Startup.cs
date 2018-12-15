@@ -49,6 +49,9 @@ namespace Blog.Core
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            //记得把缓存注入
+            services.AddScoped<ICaching, MemoryCaching>();
+
             services.AddMvc();
 
             #region Swagger
@@ -110,7 +113,7 @@ namespace Blog.Core
             var builder = new ContainerBuilder();
 
             //注册拦截器
-            builder.RegisterType<BlogLogAOP>();
+            builder.RegisterType<BlogCacheAOP>();
 
             //注册要通过反射创建的组件
             //builder.RegisterType<AdvertisementServices>().As<IAdvertisementServices>();
@@ -122,7 +125,7 @@ namespace Blog.Core
                    .AsImplementedInterfaces()
                    .InstancePerLifetimeScope()
                    .EnableInterfaceInterceptors()
-                   .InterceptedBy(typeof(BlogLogAOP));
+                   .InterceptedBy(typeof(BlogCacheAOP));
 
             //var repositoryPath = Path.Combine(path, "Blog.Core.Repository.dll");
             var assemblysRepository = Assembly.Load("Blog.Core.Repository");

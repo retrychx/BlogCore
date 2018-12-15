@@ -4,6 +4,11 @@
         <name>Blog.Core</name>
     </assembly>
     <members>
+        <member name="T:Blog.Core.AOP.BlogCacheAOP">
+            <summary>
+            面向切面的缓存使用
+            </summary>
+        </member>
         <member name="T:Blog.Core.AOP.BlogLogAOP">
             <summary>
             拦截器BlogLogAOP 继承IInterceptor接口
@@ -14,6 +19,16 @@
             实例化IInterceptor的唯一方法
             </summary>
             <param name="invocation">Invocation.</param>
+        </member>
+        <member name="T:Blog.Core.AOP.ICaching">
+            <summary>
+            简单的缓存接口，只有查询和添加，以后会进行扩展
+            </summary>
+        </member>
+        <member name="T:Blog.Core.AOP.MemoryCaching">
+            <summary>
+            实例化缓存接口ICaching
+            </summary>
         </member>
         <member name="T:Blog.Core.AuthHelper.OverWrite.JwtHelper">
             <summary>
