@@ -2,11 +2,12 @@
   <MonoDevelop.Ide.ItemProperties.Blog.Core PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Core/Program.cs">
     <Files>
-      <File FileName="Blog.Core/Startup.cs" Line="112" Column="1" />
+      <File FileName="Blog.Core/Startup.cs" Line="119" Column="77" />
       <File FileName="Blog.Core/Controllers/BlogController.cs" Line="7" Column="27" />
       <File FileName="Blog.Core.Services/AdvertisementServices.cs" Line="13" Column="6" />
       <File FileName="Blog.Core.Services/Base/BaseServices.cs" Line="236" Column="2" />
-      <File FileName="Blog.Core/Program.cs" Line="33" Column="1" />
+      <File FileName="Blog.Core/Program.cs" Line="34" Column="22" />
+      <File FileName="Blog.Core/appsettings.Development.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,8 +16,11 @@
             <Node name="Blog.Core" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="Blog.Core.Repository" selected="True" />
+            <Node name="Blog.Core.Repository" expanded="True">
+              <Node name="sugar" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

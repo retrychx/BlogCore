@@ -109,14 +109,14 @@ namespace Blog.Core
 
             //注册要通过反射创建的组件
             //builder.RegisterType<AdvertisementServices>().As<IAdvertisementServices>();
-            var path = PlatformServices.Default.Application.ApplicationBasePath;
+            //var path = PlatformServices.Default.Application.ApplicationBasePath;
 
-            var servicesPath = Path.Combine(path, "Blog.Core.Services.dll");
-            var assemblysServices = Assembly.LoadFile(servicesPath);
+            //var servicesPath = Path.Combine(path, "Blog.Core.Services.dll");
+            var assemblysServices = Assembly.Load("Blog.Core.Services");
             builder.RegisterAssemblyTypes(assemblysServices).AsImplementedInterfaces();
 
-            var repositoryPath = Path.Combine(path, "Blog.Core.Repository.dll");
-            var assemblysRepository = Assembly.LoadFile(repositoryPath);
+            //var repositoryPath = Path.Combine(path, "Blog.Core.Repository.dll");
+            var assemblysRepository = Assembly.Load("Blog.Core.Repository");
             builder.RegisterAssemblyTypes(assemblysRepository).AsImplementedInterfaces();
 
             //将services填充AutoFac容器生成器
