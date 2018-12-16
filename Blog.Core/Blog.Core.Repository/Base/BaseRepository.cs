@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Blog.Core.Common.Helper;
 using Blog.Core.IRepository.Base;
 using Blog.Core.Repository.sugar;
 using SqlSugar;
@@ -34,6 +35,7 @@ namespace Blog.Core.Repository.Base
 
         public BaseRepository()
         {
+            //var connectionString = Appsettings.app(new string[] { "AppSettings", "SqlServer", "SqlServerConnection" });
             DbContext.Init(BaseDBConfig.ConnectionString);
             context = DbContext.GetDbContext();
             db = context.Db;

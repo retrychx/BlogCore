@@ -1,30 +1,23 @@
 ﻿<Properties StartupConfiguration="{448D20D9-0621-4466-A97E-C4DFDB376464}|Default">
   <MonoDevelop.Ide.ItemProperties.Blog.Core PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Core/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Core/appsettings.json">
     <Files>
-      <File FileName="Blog.Core/AOP/BlogLogAOP.cs" Line="36" Column="14" />
-      <File FileName="Blog.Core/AOP/ICaching.cs" Line="14" Column="1" />
-      <File FileName="Blog.Core/AOP/MemoryCaching.cs" Line="20" Column="40" />
-      <File FileName="Blog.Core/AOP/BlogCacheAOP.cs" Line="57" Column="37" />
-      <File FileName="Blog.Core/Startup.cs" Line="141" Column="1" />
+      <File FileName="Blog.Core.Repository/sugar/BaseDBConfig.cs" Line="11" Column="1" />
+      <File FileName="Blog.Core.Repository/Base/BaseRepository.cs" Line="40" Column="1" />
+      <File FileName="Blog.Core.Repository/sugar/DbContext.cs" Line="287" Column="11" />
+      <File FileName="Blog.Core.Common/Helper/Appsettings.cs" Line="35" Column="38" />
+      <File FileName="Blog.Core/appsettings.json" Line="14" Column="13" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Blog.Core" expanded="True">
-            <Node name="Blog.Core" expanded="True">
-              <Node name="AOP" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/AOP/BlogCacheAOP.cs" relfile="Blog.Core/AOP/BlogCacheAOP.cs" line="28" column="1" />
+      <Breakpoint enabled="false" file="/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Services/BlogArticleServices.cs" relfile="Blog.Core.Services/BlogArticleServices.cs" line="25" column="1" />
+      <Breakpoint file="/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Repository/sugar/BaseDBConfig.cs" relfile="Blog.Core.Repository/sugar/BaseDBConfig.cs" line="8" column="1" />
+      <Breakpoint file="/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Common/Helper/Appsettings.cs" relfile="Blog.Core.Common/Helper/Appsettings.cs" line="36" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

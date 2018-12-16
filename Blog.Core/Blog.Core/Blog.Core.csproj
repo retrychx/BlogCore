@@ -19,6 +19,7 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
     <PackageReference Include="Autofac.Extras.DynamicProxy" Version="4.5.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.1" />
+    <PackageReference Include="sqlSugarCore" Version="4.6.4.9" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +29,12 @@
   <ItemGroup>
     <ProjectReference Include="..\Blog.Core.Model\Blog.Core.Model.csproj" />
     <ProjectReference Include="..\Blog.Core.IServices\Blog.Core.IServices.csproj" />
-    <ProjectReference Include="..\Blog.Core.Services\Blog.Core.Services.csproj" />
+    <ProjectReference Include="..\Blog.Core.Common\Blog.Core.Common.csproj" />
+    <ProjectReference Include="..\Blog.Core.IRepository\Blog.Core.IRepository.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>

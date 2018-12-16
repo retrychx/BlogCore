@@ -1,0 +1,12 @@
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Common/bin/Debug/netcoreapp2.0/Blog.Core.Common.deps.json
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Common/bin/Debug/netcoreapp2.0/Blog.Core.Common.dll
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Common/bin/Debug/netcoreapp2.0/Blog.Core.Common.pdb
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.Common.deps.json
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.Common.dll
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/bin/Debug/netcoreapp2.0/Blog.Core.Common.pdb
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Common/obj/Debug/netcoreapp2.0/Blog.Core.Common.csprojAssemblyReference.cache
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Common/obj/Debug/netcoreapp2.0/Blog.Core.Common.csproj.CoreCompileInputs.cache
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Common/obj/Debug/netcoreapp2.0/Blog.Core.Common.AssemblyInfoInputs.cache
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Common/obj/Debug/netcoreapp2.0/Blog.Core.Common.AssemblyInfo.cs
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Common/obj/Debug/netcoreapp2.0/Blog.Core.Common.dll
+/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Common/obj/Debug/netcoreapp2.0/Blog.Core.Common.pdb

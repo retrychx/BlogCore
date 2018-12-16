@@ -119,16 +119,16 @@ namespace Blog.Core
             //builder.RegisterType<AdvertisementServices>().As<IAdvertisementServices>();
             var path = PlatformServices.Default.Application.ApplicationBasePath;
 
-            //var servicesPath = Path.Combine(path, "Blog.Core.Services.dll");
-            var assemblysServices = Assembly.Load("Blog.Core.Services");
+            var servicesPath = Path.Combine(path, "Blog.Core.Services.dll");
+            var assemblysServices = Assembly.LoadFile(servicesPath);
             builder.RegisterAssemblyTypes(assemblysServices)
                    .AsImplementedInterfaces()
                    .InstancePerLifetimeScope()
                    .EnableInterfaceInterceptors()
                    .InterceptedBy(typeof(BlogCacheAOP));
 
-            //var repositoryPath = Path.Combine(path, "Blog.Core.Repository.dll");
-            var assemblysRepository = Assembly.Load("Blog.Core.Repository");
+            var repositoryPath = Path.Combine(path, "Blog.Core.Repository.dll");
+            var assemblysRepository = Assembly.LoadFile(repositoryPath);
             builder.RegisterAssemblyTypes(assemblysRepository).AsImplementedInterfaces();
 
             //将services填充AutoFac容器生成器
