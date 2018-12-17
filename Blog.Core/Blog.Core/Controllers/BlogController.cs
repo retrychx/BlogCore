@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Blog.Core.IServices;
 using Blog.Core.Model.Models;
+using Blog.Core.Common.Helper;
+using Blog.Core.Common.Redis;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,6 +23,7 @@ namespace Blog.Core.Controllers
     {
         IAdvertisementServices advertisementServices;
         IBlogArticleServices blogArticleServices;
+        IRedisCacheManager redisCacheManager;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="T:Blog.Core.Controllers.BlogController"/> class.
@@ -28,10 +31,12 @@ namespace Blog.Core.Controllers
         /// <param name="advertisementServices">Advertisement services.</param>
         /// <param name="blogArticleServices">BlogArticle services.</param>
         public BlogController(IAdvertisementServices advertisementServices,
-            IBlogArticleServices blogArticleServices)
+            IBlogArticleServices blogArticleServices,
+            IRedisCacheManager redisCacheManager)
         {
             this.advertisementServices = advertisementServices;
             this.blogArticleServices = blogArticleServices;
+            this.redisCacheManager = redisCacheManager;
         }
 
         // GET: api/Blog
@@ -53,10 +58,19 @@ namespace Blog.Core.Controllers
         /// <returns>The get.</returns>
         /// <param name="id">Identifier.</param>
         // GET api/Blog/5
+        //[HttpGet("{id}",Name = "Get")]
+        //public async Task<List<Advertisement>> Get(int id)
+        //{
+        //    return await advertisementServices.Query(d => d.Id == id);
+        //}
+
         [HttpGet("{id}",Name = "Get")]
-        public async Task<List<Advertisement>> Get(int id)
+        public async Task<object> Get(int id)
         {
-            return await advertisementServices.Query(d => d.Id == id);
+            var model = await blogArticleServices.GetBlogDetails(id);
+            var data = new { success = true, data = model };
+
+            return data;
         }
 
         /// <summary>
@@ -67,7 +81,21 @@ namespace Blog.Core.Controllers
         [Route("GetBlogs")]
         public async Task<List<BlogArticle>> GetBlogs()
         {
-            return await blogArticleServices.GetBlogs();
+            var connect = Appsettings.app(new string[] { "AppSettings", "RedisCaching", "ConnectionString" });
+
+            var blogArticleList = new List<BlogArticle>();
+
+            if (redisCacheManager.Get<object>("Redis.Blog") != null)
+            {
+                blogArticleList = redisCacheManager.Get<List<BlogArticle>>("Redis.Blog");
+            }
+            else
+            {
+                blogArticleList = await blogArticleServices.Query(s => s.bID > 5);
+                redisCacheManager.Set("Redis.Blog", blogArticleList, TimeSpan.FromHours(2));
+            }
+
+            return blogArticleList;
         }
 
         /// <summary>

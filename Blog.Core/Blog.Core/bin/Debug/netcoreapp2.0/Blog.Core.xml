@@ -105,7 +105,7 @@
             Blog controller.
             </summary>
         </member>
-        <member name="M:Blog.Core.Controllers.BlogController.#ctor(Blog.Core.IServices.IAdvertisementServices,Blog.Core.IServices.IBlogArticleServices)">
+        <member name="M:Blog.Core.Controllers.BlogController.#ctor(Blog.Core.IServices.IAdvertisementServices,Blog.Core.IServices.IBlogArticleServices,Blog.Core.Common.Redis.IRedisCacheManager)">
             <summary>
             Initializes a new instance of the <see cref="T:Blog.Core.Controllers.BlogController"/> class.
             </summary>

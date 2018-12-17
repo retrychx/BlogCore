@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Autofac;
 using Blog.Core.AuthHelper.OverWrite;
 using Microsoft.AspNetCore.Builder;
@@ -10,15 +8,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
-using Blog.Core.IServices;
 using Autofac.Extensions.DependencyInjection;
 using System.Reflection;
 using Blog.Core.AOP;
 using Autofac.Extras.DynamicProxy;
+using Blog.Core.Common.Redis;
+using AutoMapper;
 
 namespace Blog.Core
 {
@@ -51,6 +48,12 @@ namespace Blog.Core
         {
             //记得把缓存注入
             services.AddScoped<ICaching, MemoryCaching>();
+
+            //Redis注入
+            services.AddScoped<IRedisCacheManager, RedisCacheManager>();
+
+            //注入服务
+            services.AddAutoMapper(typeof(Startup));
 
             services.AddMvc();
 
