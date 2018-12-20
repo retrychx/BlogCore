@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{448D20D9-0621-4466-A97E-C4DFDB376464}|Default">
   <MonoDevelop.Ide.ItemProperties.Blog.Core PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Core/Controllers/BlogController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Core.Services/BlogArticleServices.cs">
     <Files>
       <File FileName="Blog.Core.Repository/sugar/DbContext.cs" Line="287" Column="11" />
       <File FileName="Blog.Core.Common/Helper/Appsettings.cs" Line="34" Column="1" />
@@ -13,7 +13,7 @@
       <File FileName="Blog.Core.Common/Redis/RedisCacheManager.cs" Line="89" Column="107" />
       <File FileName="Blog.Core/AutoMapper/CustomProfile.cs" Line="15" Column="54" />
       <File FileName="Blog.Core.IServices/IBlogArticleServices.cs" Line="17" Column="1" />
-      <File FileName="Blog.Core.Services/BlogArticleServices.cs" Line="80" Column="14" />
+      <File FileName="Blog.Core.Services/BlogArticleServices.cs" Line="33" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
@@ -22,7 +22,6 @@
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core/AOP/BlogCacheAOP.cs" relfile="Blog.Core/AOP/BlogCacheAOP.cs" line="28" column="1" />
       <Breakpoint enabled="false" file="/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Services/BlogArticleServices.cs" relfile="Blog.Core.Services/BlogArticleServices.cs" line="30" column="1" />
-      <Breakpoint file="/Users/admin/Documents/GitHub/BlogCore/Blog.Core/Blog.Core.Services/BlogArticleServices.cs" relfile="Blog.Core.Services/BlogArticleServices.cs" line="77" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
